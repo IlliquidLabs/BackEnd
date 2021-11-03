@@ -4,7 +4,6 @@
   "sourceName": "contracts/interfaces/IHoneyCallee.sol",
   "abi": [
     {
-      "constant": false,
       "inputs": [
         {
           "internalType": "address",
@@ -29,7 +28,6 @@
       ],
       "name": "honeyCall",
       "outputs": [],
-      "payable": false,
       "stateMutability": "nonpayable",
       "type": "function"
     }

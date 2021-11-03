@@ -43,7 +43,7 @@
       "contentHash": "fa90040b03a5024cf5858f7917875442",
       "sourceName": "contracts/interfaces/IHoneyERC20.sol",
       "solcConfig": {
-        "version": "0.5.16",
+        "version": "0.6.7",
         "settings": {
           "optimizer": {
             "enabled": true,
@@ -189,7 +189,7 @@
       "contentHash": "210e221e10abe9ea53d80daf649d2333",
       "sourceName": "contracts/interfaces/IHoneyPair.sol",
       "solcConfig": {
-        "version": "0.5.16",
+        "version": "0.6.7",
         "settings": {
           "optimizer": {
             "enabled": true,
@@ -291,7 +291,7 @@
       "contentHash": "3d2b948a9266ee66b6e739de97c7e6e9",
       "sourceName": "contracts/interfaces/IERC20.sol",
       "solcConfig": {
-        "version": "0.5.16",
+        "version": "0.6.7",
         "settings": {
           "optimizer": {
             "enabled": true,
@@ -325,7 +325,7 @@
       "contentHash": "af2180d9d08ec23be589129ab7e1bf35",
       "sourceName": "contracts/interfaces/IHoneyFactory.sol",
       "solcConfig": {
-        "version": "0.5.16",
+        "version": "0.6.7",
         "settings": {
           "optimizer": {
             "enabled": true,
@@ -359,7 +359,7 @@
       "contentHash": "7e1893c0d2b5fa6e085fa56746dbe875",
       "sourceName": "contracts/interfaces/IHoneyCallee.sol",
       "solcConfig": {
-        "version": "0.5.16",
+        "version": "0.6.7",
         "settings": {
           "optimizer": {
             "enabled": true,
@@ -430,7 +430,7 @@
       "contentHash": "6f3dc9936ec2cff1666c76993e7d6531",
       "sourceName": "contracts/Migration.sol",
       "solcConfig": {
-        "version": "0.5.16",
+        "version": "0.6.7",
         "settings": {
           "optimizer": {
             "enabled": true,
@@ -457,6 +457,49 @@
       ],
       "artifacts": [
         "Migrations"
+      ]
+    },
+    "/Users/jacobdale/Documents/GitHub/backend/HoneyDex/NectarTrade/contracts/HoneyRouter.sol": {
+      "lastModificationDate": 1635943302818,
+      "contentHash": "99ea3c4d0539c6ed2897719275ad34e2",
+      "sourceName": "contracts/HoneyRouter.sol",
+      "solcConfig": {
+        "version": "0.6.7",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "HoneyLibrary",
+        "HoneyRouter",
+        "IERC20",
+        "IHoneyFactory",
+        "IHoneyPair",
+        "IHoneyRouter01",
+        "IHoneyRouter02",
+        "IWETH",
+        "SafeMath",
+        "TransferHelper"
       ]
     }
   }

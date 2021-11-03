@@ -19,6 +19,17 @@ async function main() {
   // We get the account used to deploy
   const [deployer] = await ethers.getSigners();
   console.log("Account balance:", (await deployer.getBalance()).toString())
+
+//set wethAddress for Honey Router
+  let wethAddress
+  let chainId = await deployer.getChainId()
+  if (chainId == 4) {
+    wethAddress = '0xdf032bc4b9dc2782bb09352007d4c57b75160b15'
+  }
+  else if (chainId == 42161) {
+    wethAddress = '0x82af49447d8a07e3bd95bd0d56f35241523fbab1'
+  }
+  console.log("WETH Address:", wethAddress)
   
 // We get the contract to deploy
   const Factory = await hre.ethers.getContractFactory("HoneyFactory");
@@ -29,11 +40,11 @@ async function main() {
   console.log("Honey Factory deployed to:", factory.address);
 
   const Router = await hre.ethers.getContractFactory("HoneyRouter");
-  const router = await Router.deploy();
+  const router = await Router.deploy(factory.address, wethAddress);
 
   await router.deployed();
 
-  console.log("Honey Factory deployed to:", factory.address);
+  console.log("Honey Router deployed to:", router.address);
 
 
 }
