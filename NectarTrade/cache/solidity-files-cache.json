@@ -1,0 +1,463 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/Users/jacobdale/Documents/GitHub/backend/HoneyDex/NectarTrade/contracts/HoneyERC20.sol": {
+      "lastModificationDate": 1635683972944,
+      "contentHash": "0cebe01a49c1fa7f04b1db1c64facd40",
+      "sourceName": "contracts/HoneyERC20.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/IHoneyERC20.sol",
+        "./libraries/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "=0.5.16"
+      ],
+      "artifacts": [
+        "HoneyERC20"
+      ]
+    },
+    "/Users/jacobdale/Documents/GitHub/backend/HoneyDex/NectarTrade/contracts/interfaces/IHoneyERC20.sol": {
+      "lastModificationDate": 1635684148888,
+      "contentHash": "fa90040b03a5024cf5858f7917875442",
+      "sourceName": "contracts/interfaces/IHoneyERC20.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IHoneyERC20"
+      ]
+    },
+    "/Users/jacobdale/Documents/GitHub/backend/HoneyDex/NectarTrade/contracts/libraries/SafeMath.sol": {
+      "lastModificationDate": 1635683672007,
+      "contentHash": "a65356c329efeffba75210664f5df3cd",
+      "sourceName": "contracts/libraries/SafeMath.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "=0.5.16"
+      ],
+      "artifacts": [
+        "SafeMath"
+      ]
+    },
+    "/Users/jacobdale/Documents/GitHub/backend/HoneyDex/NectarTrade/contracts/test/ERC20.sol": {
+      "lastModificationDate": 1635939552355,
+      "contentHash": "70bec2c182d8bf085c96f01da285def1",
+      "sourceName": "contracts/test/ERC20.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../HoneyERC20.sol"
+      ],
+      "versionPragmas": [
+        "=0.5.16"
+      ],
+      "artifacts": [
+        "ERC20"
+      ]
+    },
+    "/Users/jacobdale/Documents/GitHub/backend/HoneyDex/NectarTrade/contracts/HoneyPair.sol": {
+      "lastModificationDate": 1635939666870,
+      "contentHash": "2a29bf12ef6ad3e8fe877843b3d2aa89",
+      "sourceName": "contracts/HoneyPair.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/IHoneyPair.sol",
+        "./HoneyERC20.sol",
+        "./libraries/Math.sol",
+        "./libraries/UQ112x112.sol",
+        "./interfaces/IERC20.sol",
+        "./interfaces/IHoneyFactory.sol",
+        "./interfaces/IHoneyCallee.sol"
+      ],
+      "versionPragmas": [
+        "=0.5.16"
+      ],
+      "artifacts": [
+        "HoneyPair"
+      ]
+    },
+    "/Users/jacobdale/Documents/GitHub/backend/HoneyDex/NectarTrade/contracts/interfaces/IHoneyPair.sol": {
+      "lastModificationDate": 1635684152364,
+      "contentHash": "210e221e10abe9ea53d80daf649d2333",
+      "sourceName": "contracts/interfaces/IHoneyPair.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IHoneyPair"
+      ]
+    },
+    "/Users/jacobdale/Documents/GitHub/backend/HoneyDex/NectarTrade/contracts/libraries/Math.sol": {
+      "lastModificationDate": 1635683672013,
+      "contentHash": "bee6c1959728d5d42c14151076cebd83",
+      "sourceName": "contracts/libraries/Math.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "=0.5.16"
+      ],
+      "artifacts": [
+        "Math"
+      ]
+    },
+    "/Users/jacobdale/Documents/GitHub/backend/HoneyDex/NectarTrade/contracts/libraries/UQ112x112.sol": {
+      "lastModificationDate": 1635683672010,
+      "contentHash": "2a703244e9f645c6fb297a983ce7c9c4",
+      "sourceName": "contracts/libraries/UQ112x112.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "=0.5.16"
+      ],
+      "artifacts": [
+        "UQ112x112"
+      ]
+    },
+    "/Users/jacobdale/Documents/GitHub/backend/HoneyDex/NectarTrade/contracts/interfaces/IERC20.sol": {
+      "lastModificationDate": 1635683672026,
+      "contentHash": "3d2b948a9266ee66b6e739de97c7e6e9",
+      "sourceName": "contracts/interfaces/IERC20.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "/Users/jacobdale/Documents/GitHub/backend/HoneyDex/NectarTrade/contracts/interfaces/IHoneyFactory.sol": {
+      "lastModificationDate": 1635684150485,
+      "contentHash": "af2180d9d08ec23be589129ab7e1bf35",
+      "sourceName": "contracts/interfaces/IHoneyFactory.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IHoneyFactory"
+      ]
+    },
+    "/Users/jacobdale/Documents/GitHub/backend/HoneyDex/NectarTrade/contracts/interfaces/IHoneyCallee.sol": {
+      "lastModificationDate": 1635684145694,
+      "contentHash": "7e1893c0d2b5fa6e085fa56746dbe875",
+      "sourceName": "contracts/interfaces/IHoneyCallee.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IHoneyCallee"
+      ]
+    },
+    "/Users/jacobdale/Documents/GitHub/backend/HoneyDex/NectarTrade/contracts/HoneyFactory.sol": {
+      "lastModificationDate": 1635683982214,
+      "contentHash": "ed05dbba1d001bdb31d586c1d4483892",
+      "sourceName": "contracts/HoneyFactory.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/IHoneyFactory.sol",
+        "./HoneyPair.sol"
+      ],
+      "versionPragmas": [
+        "=0.5.16"
+      ],
+      "artifacts": [
+        "HoneyFactory"
+      ]
+    },
+    "/Users/jacobdale/Documents/GitHub/backend/HoneyDex/NectarTrade/contracts/Migration.sol": {
+      "lastModificationDate": 1635683671916,
+      "contentHash": "6f3dc9936ec2cff1666c76993e7d6531",
+      "sourceName": "contracts/Migration.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.25 <0.7.0"
+      ],
+      "artifacts": [
+        "Migrations"
+      ]
+    }
+  }
+}

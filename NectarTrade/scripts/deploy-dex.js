@@ -4,6 +4,7 @@
 // When running the script with `npx hardhat run <script>` you'll find the Hardhat
 // Runtime Environment's members available in the global scope.
 
+const { ethers } = require("hardhat");
 const hre = require("hardhat");
 
 async function main() {
@@ -15,9 +16,13 @@ async function main() {
   // manually to make sure everything is compiled
   // await hre.run('compile');
 
-  // We get the contract to deploy
+  // We get the account used to deploy
+  const [deployer] = await ethers.getSigners();
+  console.log("Account balance:", (await deployer.getBalance()).toString())
+  
+// We get the contract to deploy
   const Factory = await hre.ethers.getContractFactory("HoneyFactory");
-  const factory = await Factory.deploy();
+  const factory = await Factory.deploy(deployer.address);
 
   await factory.deployed();
 

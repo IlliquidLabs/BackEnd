@@ -22,11 +22,17 @@ module.exports = {
   networks: {
   arbitrum: {
     url: "https://arb1.arbitrum.io/rpc",
-    accounts: [process.env.DEPLOYERK]
+    accounts: [process.env.DEPLOYER_PK],
+    chainId: 42161
+  },
+  rinkeby: {
+    url: process.env.INFURARINKEBY,
+    accounts: [process.env.DEPLOYER_PK],
+    chainId: 4
   }
   },
   solidity: {
-    version: "0.8.4",
+    version: "0.5.16",
     settings: {
       optimizer: {
         enabled: true,
@@ -34,4 +40,4 @@ module.exports = {
       }
     }
   }
-  };
+}
